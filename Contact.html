@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F115 Conference Summit</title>
+        <link rel="stylesheet" href="eveorg.css">
+        <script src="https://kit.fontawesome.com/4548d1d485.js" crossorigin="anonymous"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+
+            .bg{
+                
+                max-width: 400px;
+                max-height: auto;
+                background-color: #ffffffd0;
+                margin: 80px auto;
+                border-radius: 15px; 
+                animation: fadein 1s; 
+            }
+            .bg:hover{  
+                max-width: 425px;
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                box-shadow: 0 0 20px #ff8fd8 ;     
+            }
+
+            .t ,.but{
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .form1{
+                padding: 3%;
+                font-family: "Red Hat Display", sans-serif;
+                font-size: large;
+            }
+
+            .but:hover{
+                color: aliceblue;
+                background-color: #ff00cce4;
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                border-color: rgb(102, 3, 111);
+                cursor: pointer;
+            }
+            .t:hover{
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                border-color: rgb(255, 0, 212);
+            }
+            
+
+            .social{
+                margin-top: -4%;
+                font-size: 30px;
+                text-align: center;
+                margin-left: 40%;
+                margin-right: 40%;
+                
+                
+            }
+            .social:hover{
+                
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                cursor:pointer;
+                color: #ffffff;
+                text-shadow: 0 0 10px #000000;
+            }
+
+            
+
+        </style>
+    </head>
+    <body style="background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover;">
+       
+            <div class="tabs">
+                <div class="logo">Eve.Org</div>
+                <a href="Main.html" class="a1"  ><div >Home</div></a>
+                <a href="Speaker.html" class="a1" ><div>Speaker</div></a>
+                <a href="Sponser.html" class="a1" ><div>Sponser</div></a>
+                <a href="Contact.html" class="a1"  id="active"><div>Contact</div></a>
+                <a href="Book.html" class="book"><div>Book</div></a>
+            </div>
+
+            <div class="bg">
+
+                <form class="form1">
+                    <p align="center" ><b>Contact Us</b></p>
+                    
+                    <div>
+                        <label for="first_name" class="l1">First Name : </label><br>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name*" required class="t">
+                    </div>
+                    <div>
+                        <label for="last_name" class="l1">Last Name : </label><br>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name*" required class="t">
+                    </div>        
+                    <div >
+                        <label for="email" class="l1">Email  : </label>  <br>
+                        <input  type="email" id="email" name="email" placeholder="Email*" required class="t"  >
+                    </div>
+                    <div>
+                        <label for="message" class="l1">Message :</label><br>
+                        <textarea   id="message" name="message" placeholder="Enter Any Message" rows="3" class="t"></textarea>
+                    </div>
+                    <input class="but"  style=" width: 50%; margin-left: 25%;" type="submit" value="Send Message" >
+                    
+                </form>
+
+            </div>
+            <div class="social"><i class="fa-brands fa-youtube"></i> | <i class="fa-brands fa-instagram"></i> | <i class="fa-brands fa-x-twitter"></i></div>
+
+            
+
+           
+   
+    
+    </body>
+</html>

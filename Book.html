@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F115 Conference Summit</title>
+        <link rel="stylesheet" href="eveorg.css">
+        <script src="https://kit.fontawesome.com/4548d1d485.js" crossorigin="anonymous"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+            form {
+                font-family: "Red Hat Display", sans-serif;
+                max-width: 400px;
+                margin: 50px auto;
+                background-color: #ffd2fab5;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                animation: fadein 1s;
+            }
+            @keyframes fadein {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+
+            form:hover{
+                background-color: #ffffffb5;
+                box-shadow: 0 0 20px #ff00ee;
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            input[type="text"], input[type="email"], input[type="tel"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                background-color: #ff00b3; /* Deep Pink */
+                color: white;
+                padding: 10px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            input[type="submit"]:hover {
+                background-color: #ff97e0a3; 
+                color: #33122f;
+                
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            .t:hover{
+                transition: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                border-color: rgb(255, 0, 212);
+            }
+           
+        </style>
+    </head>
+    <body style="background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover;">
+       
+            <div class="tabs">
+                <div class="logo">Eve.Org</div>
+                <a href="Main.html" class="a1"  ><div >Home</div></a>
+                <a href="Speaker.html" class="a1" ><div>Speaker</div></a>
+                <a href="Sponser.html" class="a1" ><div>Sponser</div></a>
+                <a href="Contact.html" class="a1"><div>Contact</div></a>
+                <a href="Book.html" class="book"  id="activebook"><div>Book</div></a>
+            </div>
+                
+            <form method="post">
+                <p align="center" style="font-size: large;"><b>Register Now</b></p> <br>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="width: 48%;">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required class="t">
+                    </div>
+                    <div style="width: 48%;">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required class="t">
+                    </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required class="t">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required class="t">
+
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" rows="4" class="t"></textarea>
+
+                <input type="submit" value="Register">
+            </form>
+    </body>
+</html>
