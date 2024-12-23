@@ -7,7 +7,7 @@
                 margin-right: 2%;
             }
 .a1,.book,.logo{
-                grid-row-start: 1; //to start every cell in same row
+                grid-row-start: 1; 
             }
 .a1{
                 text-decoration: none;
